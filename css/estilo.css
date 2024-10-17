@@ -1,0 +1,11 @@
+body {
+    background-color: #39536a; /* Color de fondo agradable */
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.alert {
+    margin-top: 20px;
+}
