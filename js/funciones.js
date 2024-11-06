@@ -21,6 +21,7 @@ function verificarGanador(palabra, letrasAdivinadas) {
     return palabra.split('').every(letra => letrasAdivinadas.includes(letra));
 }
 
+
 function actualizarIntentos(intentos) {
     document.querySelector('#intentos').textContent = `Intentos restantes: ${intentos}`;
 }
