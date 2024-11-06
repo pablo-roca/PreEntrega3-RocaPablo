@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.querySelector('#iniciarJuego').addEventListener('click', async () => { // Agregado async aquí también
+document.querySelector('#iniciarJuego').addEventListener('click', async () => {
     let nombreJugador = localStorage.getItem('nombreJugador');
 
     if (!nombreJugador) {
@@ -52,7 +52,6 @@ document.querySelector('#iniciarJuego').addEventListener('click', async () => { 
             let id = Math.floor(Math.random()* (251) )+1
             const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
             const data = await response.json();
-            console.log(data)
             palabras.push(data.name)
             pistas.push(data.types.map(tipo => tipo.type.name))
 
